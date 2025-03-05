@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+body{
+    color: antiquewhite;
+}
+.background{
+    position: relative;
+    background: linear-gradient(170deg, #f5f57b 35%, #fff6fb 100%);
+}
+.logo{
+    font-size: 2em;
+    font-weight: 600;
+    flex: 1;
+    color: #600081;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    margin-right: 1%;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    font-family: "PT Sans", serif;
+}
+.navbar.scrolled{
+    background-color: #fff066;
+    box-shadow: rgb(0, 0, 0.35) 0 5px 15px;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    display: flex;
+    justify-content: center;
+}
+.nav-items li{
+    list-style: none;
+    padding: 1em;
+}
+.nav-items li a{
+    text-decoration: none;
+    transition: 0,3s;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 1px;
+}
+.nav-items li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #64009e;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-items li:hover::after{
+    width: 100%;
+}
+.nav-menu{
+    display: none;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    width: 90%;
+    padding: 12em 2em 4em 2em;
+    margin: auto;
+}
+.main h1{
+    font-size: 3.5em;
+    color: #473829;
+    line-height: 1.5;
+    padding: 2% 0;
+}
+.left h3{
+    font-size: 20px;
+    color: #555;
+}
+.left p{
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding: 4% 0;
+    color: #555;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width: 650px;
+    max-width: 100%;
+    height: auto;
+}
+.btn{
+    padding: 12px 25px;
+    background-color: #ffe400;
+    color: #600081;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid #000;
+    transition: all 0.5 linear;
+}
+.btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: #000;
+}
+/* -------------features    */
+.sec{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    color: #000;
+    padding: 9em 0 3em 0;
+}
+.heading{
+    color: #600081;
+    font-size: 3em;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+.para{
+    font-size: 14px;
+    color: #555;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 6em;
+}
+.boxes{
+    max-width: 400px;
+    margin: auto 1em;
+    padding: 25px;
+    background-color: #fff7b4;
+    box-shadow: rgb(0, 0, 0.35) 0 5px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.sub_heading{
+    padding-bottom: 13px;
+}
+.para_1{
+    font-size: 13px;
+    line-height: 1.9;
+    color: #555;
+}
+.boxes h2{
+    margin-top: 1em;
+}
+.boxes i{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 2em;
+    background-color: #64009e;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff066;
+    transform: translate(-50%, -50%);
+    transition: all 0.7s linear;
+}
+.boxes:hover i{
+    cursor: pointer;
+    border: 10px double #ffe400;
+    transform: translate(-50%, -50%) rotateY(40deg);
+}
+/* --------------About-------------*/
+.about_box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    align-items: center;
+}
+.about_box li{
+    list-style: none;
+}
+.left_box, .right_box{
+    text-align: left;
+}
+.mid img{
+    width: 400px;
+}
+.left_box li, .right_box li{
+    padding: 14px 0;
+}
+.left_box li i, .right_box li i{
+    color: #fff;
+    padding: 1px;
+    background: linear-gradient(to bottom, #c402ff, #c5a800);
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.btn1{
+    margin-top: 12px;
+    background-color: #ffe400;
+}
+
+/* ------blog----------*/
+
+.blog{
+    width: 100%;
+    background-color: #fef183;
+    padding: 5em 0;
+    margin: 2em 0;
+}
+.b_blog{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    padding-top: 4em;
+}
+.blog_box h1{
+    padding: 12px 0;
+    font-size: 2.7em;
+}
+
+/* ------- contact --------*/
+
+.box_1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3em;
+}
+.contact_left, .contact_right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+.contact_left input, .contact_left textarea{
+    padding: 15px;
+    outline: none;
+    background: #fcffe7;
+    border: 2px solid #600081;
+    border-radius: 15px;
+    box-shadow: rgb(0, 0, 0.35) 0 5px 15px;
+}
+.contact_left input{
+    margin: 2% 0;
+}
+.contact_right img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*  ------footer------*/
+
+footer{
+    background-color: #f5f57b;
+    margin-top: 7em;
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4rem 2rem;
+    width: 80%;
+    margin-bottom: 3em;
+    text-align: left;
+}
+.footer_logo img{
+    max-width: 40px;
+} 
+.footer_logo span{
+    display: flex;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.footer_col h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #600081;
+}
+.footer_links{
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+}
+.footer_links a{
+    text-decoration: none;
+    color: #473829;
+    letter-spacing: 1px;
+}
+.footer_links a:hover{
+    color: #c5a900;
+}
+.footer_text{
+    margin: 2rem 0;
+    text-align: left;
+}
+.footer_socials{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+.footer_socials a{
+    font-family: 1.8rem;
+    text-decoration: none;
+    padding: 4%;
+    background-color: #600081;
+    color: #fff;
+}
+.footer_socials a:hover{
+    background-color: #c402ff;
+    color: #f5f57b;
+}
