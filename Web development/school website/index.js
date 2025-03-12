@@ -7,3 +7,90 @@ window.addEventListener('scroll',function(){
         navbar.classList.remove('scrolled')
     }
 })
+
+// animation
+const scrollRevealOption = {
+    distance: '50px',
+    origin: 'bottom',
+    duration: 1000
+}
+
+ScrollReveal().reveal('.left',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.right img',{
+    ...scrollRevealOption,
+    origin: 'right',
+});
+
+ScrollReveal().reveal('.heading',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.para',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.box',{
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal('.left_box',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.mid',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.right_box',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.left_box li',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.right_box li',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.blog_box',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.contact_left',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.contact_right',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.footer_col',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.title',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal('.card_container',{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
